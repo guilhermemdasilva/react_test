@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import UserInformation from './UserInformation';
 
@@ -27,16 +26,13 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>Welcome to React Test</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.jsx</code> and save to reload.
-        </p>
         <div className="App-intro">
-          <hr />
           <p>Click on the button to fetch the user information</p>
-          <button onClick={this.getUserInformation()}>Click me</button>
+          <button type="button" className="btn btn-primary" onClick={this.getUserInformation()}>
+            Click me
+          </button>
         </div>
         <UserInformation />
       </div>
